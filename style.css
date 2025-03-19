@@ -1,24 +1,26 @@
-/* Styling for the Portfolio */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: url('image.png') no-repeat center center fixed;
-    background-size: cover;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f5f5f5;
 }
 
 .container {
-    width: 80%;
-    max-width: 900px;
-    background: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 800px;
+    background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    box-shadow: 0px 0px 10px gray;
 }
 
 h1 {
@@ -28,61 +30,77 @@ h1 {
 
 h2 {
     font-size: 18px;
-    color: #555;
+    margin-bottom: 20px;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .box {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    width: 48%;
+    background: #f0f0f0;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px gray;
-    text-align: center;
-    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h3 {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.achievements, .education {
-    justify-self: left;
+ul {
+    list-style: none;
+    padding-left: 10px;
 }
 
-.hobbies, .contact {
-    justify-self: right;
+ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-.profile {
-    grid-column: span 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+.photo {
+    width: 120px;
+    height: 120px;
+    background: white;
     border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 10px auto;
 }
 
 .quote {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #222;
-    animation: blink 1s infinite alternate;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+    animation: blink 1.5s infinite alternate;
 }
 
 @keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0.4; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 90%;
+    }
 }
