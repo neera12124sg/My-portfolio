@@ -7,15 +7,17 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: #f5f5f5;
+    padding: 20px;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1200px; /* Increased max width */
     background: white;
     padding: 20px;
     border-radius: 15px;
@@ -34,20 +36,19 @@ h2 {
 }
 
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
 }
 
 .box {
-    width: 48%;
     background: #f0f0f0;
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
+    width: 100%;
 }
 
 h3 {
@@ -66,8 +67,8 @@ ul li {
 }
 
 .photo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background: white;
     border: 3px solid black;
     border-radius: 50%;
@@ -85,6 +86,7 @@ ul li {
     animation: blink 1.5s infinite alternate;
 }
 
+/* Blinking animation */
 @keyframes blink {
     from {
         opacity: 1;
@@ -94,13 +96,15 @@ ul li {
     }
 }
 
-/* Responsive Design */
+/* Make full width on smaller screens */
 @media (max-width: 768px) {
     .content {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .box {
-        width: 90%;
+        width: 100%;
     }
 }
