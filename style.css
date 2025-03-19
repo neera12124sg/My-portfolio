@@ -7,33 +7,30 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;  /* Full viewport width */
     min-height: 100vh;
     background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 🔥 FORCE FULL WIDTH */
+/* 🔥 Make container FULL WIDTH */
 .container {
-    width: 100vw;  /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    background: white;
+    width: 90vw;  /* Take almost full screen */
+    max-width: 100%;
     padding: 30px;
-    border-radius: 0px;  /* Remove rounded corners */
-    box-shadow: none; /* Remove shadow */
-    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Layout */
+/* 🔥 Make content spread out */
 .main-content {
     display: flex;
-    justify-content: space-between;  /* Spread the boxes */
+    justify-content: space-between;
     align-items: center;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    padding: 20px;
 }
 
 /* Left and Right Sections */
@@ -41,23 +38,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 35%;  /* Increased width */
+    width: 40%;  /* Make columns take more space */
 }
 
-/* Box styling */
-.box {
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 100%;
-}
-
-/* Profile Photo */
+/* Profile Photo - Centered */
 .photo {
-    width: 250px;
-    height: 300px;
+    width: 180px;
+    height: 220px;
     background: white;
     border: 3px solid black;
     border-radius: 50%;
@@ -85,7 +72,7 @@ body {
     }
 
     .photo {
-        width: 180px;
-        height: 220px;
+        width: 150px;
+        height: 180px;
     }
 }
