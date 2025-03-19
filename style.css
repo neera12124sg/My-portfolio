@@ -1,19 +1,17 @@
 /* Styling for the Resume */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
     background: url('image.png') no-repeat center center fixed;
     background-size: cover;
+    color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    width: 80%;
-    max-width: 600px;
+    max-width: 900px; /* Increased width */
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
@@ -21,56 +19,26 @@ body {
     text-align: center;
 }
 
-/* Profile Section */
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #333;
-    margin-bottom: 10px;
-}
-
-/* Heading Styles */
+/* Keep name and ENTC as it is */
 h1 {
     color: #222;
-    margin-bottom: 5px;
 }
 
 h2 {
     color: #444;
-    font-size: 20px;
-    margin-bottom: 10px;
 }
 
-/* Section Box */
+/* Two-column layout for sections */
+.sections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 .section {
     background: rgba(255, 255, 255, 0.95);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px gray;
-    margin-bottom: 10px;
     text-align: left;
-}
-
-.section h3 {
-    color: #333;
-    border-bottom: 2px solid #777;
-    padding-bottom: 5px;
-}
-
-.section ul {
-    padding-left: 20px;
-}
-
-.contact a {
-    color: blue;
-    text-decoration: none;
 }
