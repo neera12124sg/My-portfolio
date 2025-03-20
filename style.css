@@ -1,4 +1,4 @@
-/* Reset styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,73 +6,110 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body Styling */
 body {
-    width: 100vw;  /* Full viewport width */
-    min-height: 100vh;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 🔥 Make container FULL WIDTH */
-.container {
-    width: 90vw;  /* Take almost full screen */
-    max-width: 100%;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 🔥 Make content spread out */
-.main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Full width */
-}
-
-/* Left and Right Sections */
-.left-column, .right-column {
+    background-color: #f4f4f4; /* Light Grey Background */
+    color: #333; /* Dark Text */
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 40%;  /* Make columns take more space */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-/* Profile Photo - Centered */
-.photo {
-    width: 180px;
-    height: 220px;
-    background: white;
-    border: 3px solid black;
-    border-radius: 50%;
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: #222;
+}
+
+h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Left & Right Side Boxes */
+.left, .right {
+    flex: 1;
+}
+
+/* Box Styling */
+.box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Profile Image */
+.profile {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
-.photo img {
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #555;
+}
+
+/* Table Styling */
+table {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
 
-    .left-column, .right-column {
-        width: 100%;
-    }
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
 
-    .photo {
-        width: 150px;
-        height: 180px;
-    }
+/* Contact Info */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
 }
