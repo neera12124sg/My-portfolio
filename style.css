@@ -1,133 +1,50 @@
-/* General Page Styling */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #1e1e2f, #232343);
-    color: white;
+    background-color: #f4f4f4;
 }
 
-/* Navigation Bar */
 header {
-    background: #14142b;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 24px;
-    color: #f8f8f8;
-}
-
-nav a {
-    text-decoration: none;
-    color: #f8f8f8;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #e91e63;
-}
-
-/* Intro Section */
-.intro {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
-    text-align: left;
-}
-
-.text-content h2 {
-    font-size: 35px;
-}
-
-.highlight {
-    color: #e91e63;
-    font-weight: bold;
-}
-
-.profile-pic img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-/* Table Styling */
-.qualifications, .achievements {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    width: 70%;
-    background: #2b2b4b;
-    border-radius: 10px;
-}
-
-.qualifications h2, .achievements h2 {
-    font-size: 24px;
-    color: #e91e63;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background: #ff4081;
+    background: #333;
     color: white;
-}
-
-/* Contact Section */
-.contact {
+    padding: 10px 0;
     text-align: center;
-    margin: 50px 0;
 }
 
-.contact h2 {
-    font-size: 24px;
-    color: #e91e63;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.contact a {
-    color: #ff4081;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+section {
+    padding: 20px;
+    text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-    }
+.project {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    .profile-pic img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .qualifications, .achievements {
-        width: 90%;
-    }
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
