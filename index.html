@@ -3,90 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neeraj's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
-        <h1>Neeraj's Portfolio</h1>
+        <h1>My Portfolio</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Academics</a>
-            <a href="#">Achievements</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main Section -->
-    <section class="intro">
-        <div class="text-content">
-            <h2>Hi, My Name is <span class="highlight">Neeraj</span></h2>
-            <p>I am a passionate <span class="highlight">Electronics & Telecommunication Engineer</span></p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a first-year student learning web development.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of the project.</p>
         </div>
-        <div class="profile-pic">
-            <img src="profile.jpg" alt="Neeraj Singh">
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of the project.</p>
         </div>
     </section>
 
-    <!-- Educational Qualifications -->
-    <section class="qualifications">
-        <h2>Educational Qualifications</h2>
-        <table>
-            <tr>
-                <th>Exam</th>
-                <th>School/College</th>
-                <th>Percentage</th>
-            </tr>
-            <tr>
-                <td>10th</td>
-                <td>Kendriya Vidyalaya CME, Pune</td>
-                <td>65%</td>
-            </tr>
-            <tr>
-                <td>12th</td>
-                <td>Kendriya Vidyalaya CME, Pune</td>
-                <td>74%</td>
-            </tr>
-            <tr>
-                <td>BTech (ENTC)</td>
-                <td>MIT AOE under SSPU</td>
-                <td>Currently Pursuing</td>
-            </tr>
-        </table>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: example@example.com</p>
     </section>
 
-    <!-- Achievements Section -->
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <table>
-            <tr>
-                <th>Sport</th>
-                <th>Position</th>
-            </tr>
-            <tr>
-                <td>Hurdle Jumping</td>
-                <td>2nd Position</td>
-            </tr>
-            <tr>
-                <td>Running</td>
-                <td>3rd Position</td>
-            </tr>
-            <tr>
-                <td>Football</td>
-                <td>4th Position</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Info</h2>
-        <p><strong>Location:</strong> Pune</p>
-        <p><strong>Email:</strong> <a href="mailto:neeraj79723@gmail.com">neeraj79723@gmail.com</a></p>
-    </section>
-
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
 </body>
 </html>
