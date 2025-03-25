@@ -47,7 +47,7 @@ h1 {
 }
 
 /* Sections */
-.about, .projects, .contact {
+.about, .education, .achievements, .projects, .contact {
     text-align: center;
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
@@ -59,22 +59,22 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-.about:hover, .projects:hover, .contact:hover {
+.about:hover, .education:hover, .achievements:hover, .projects:hover, .contact:hover {
     transform: scale(1.02);
 }
 
-/* Project Cards */
-.project-card {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease-in-out;
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
 }
 
 /* Footer */
