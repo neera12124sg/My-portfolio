@@ -1,75 +1,77 @@
-/* General Styling */
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global Styling */
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    background: #0a0f1e;
-    color: #e0e0e0;
 }
 
-/* Header */
-header {
+/* Centered Layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile {
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(135deg, #1e3a8a, #9333ea);
-    color: white;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
 }
 
-/* Profile Image */
 .profile img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Typing Effect */
-h1 {
+.profile h1 {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
+    margin: 10px 0;
 }
 
-.typing-text {
-    color: #facc15;
+.profile p {
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.cursor {
-    display: inline-block;
-    width: 5px;
-    background: #facc15;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-/* Sections */
-.about, .education, .achievements, .projects, .contact {
-    text-align: center;
-    padding: 30px;
+/* General Box Styling */
+.section-box {
     background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
     margin: 20px auto;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
-.about:hover, .education:hover, .achievements:hover, .projects:hover, .contact:hover {
+.section-box:hover {
     transform: scale(1.02);
 }
 
-/* Lists */
-ul {
+/* Section Titles */
+.section-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Education & Achievements List */
+.section-box ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+.section-box ul li {
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     margin: 5px;
@@ -77,11 +79,63 @@ ul li {
     box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
 }
 
-/* Footer */
-footer {
+/* Contact Section */
+.contact {
     text-align: center;
+    font-size: 18px;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    color: #76ff03;
+}
+
+/* Projects Section */
+.project-box {
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    background: #1e293b;
-    color: white;
-    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.2);
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Typing Effect */
+.typing {
+    font-size: 18px;
+    font-weight: 400;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+}
+
+/* Typing Keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
