@@ -65,13 +65,23 @@ body {
     margin-bottom: 15px;
 }
 
+/* Education & Achievements Box */
+.education, .achievements {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
 /* Education & Achievements List */
-.section-box ul {
+.education ul, .achievements ul {
     list-style: none;
     padding: 0;
 }
 
-.section-box ul li {
+.education ul li, .achievements ul li {
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     margin: 5px;
