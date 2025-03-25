@@ -1,50 +1,87 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #0a0f1e;
+    color: #e0e0e0;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+    padding: 50px;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
     color: white;
-    text-decoration: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-section {
-    padding: 20px;
+/* Profile Image */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Typing Effect */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.typing-text {
+    color: #facc15;
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    background: #facc15;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Sections */
+.about, .projects, .contact {
     text-align: center;
-}
-
-.project {
-    background: white;
-    margin: 10px auto;
-    padding: 15px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
     width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
 }
 
+.about:hover, .projects:hover, .contact:hover {
+    transform: scale(1.02);
+}
+
+/* Project Cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
 footer {
-    background: #333;
-    color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.2);
 }
