@@ -1,4 +1,4 @@
-const text = "Hello, I'm Aryan Shelkhande.";
+const text = "Hello, I'm Aryan Shelkande.";
 let index = 0;
 const typingText = document.querySelector('.typing-text');
 const cursor = document.querySelector('.cursor');
